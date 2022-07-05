@@ -75,14 +75,16 @@ This means the node is up and running. If it is the first time it runs, it needs
 
 The bootstrapping status can be checked by sending the following cURL request:
 
-` curl -X POST --data '{ 
+```
+curl -X POST --data '{ 
    "jsonrpc": "2.0", 
    "method": "info.isBootstrapped", 
    "params":{ 
     "chain":"X" 
    }, 
    "id": 1 
-}' -H 'content-type:application/json;' 127.0.0.1:9650/ext/info `
+}' -H 'content-type:application/json;' 127.0.0.1:9650/ext/info 
+```
 
 Now it is wait time.
 
@@ -97,6 +99,7 @@ Or is it more like:
 
 The good news is that shutting down the node does not terminate the process. The next time the node is turned on, it’ll start from where it was left.
 When the process is complete, you will see:
+
 ![img5](https://github.com/wuzhong-zhu/Avalanche_subnet_tutorial/blob/main/resources/tutorial%202/img5.png?raw=true)
 
 Hooray, your node is up and running.
@@ -113,38 +116,43 @@ The official documentation explains how to set a validator node on the mainnet a
 
 First, get your node ID by running the following cURL request:
 
-` curl -X POST --data '{
+```
+curl -X POST --data '{
 "jsonrpc":"2.0",
 "id" :1,
 "method" :"info.getNodeID"
-}' -H 'content-type:application/json;' 127.0.0.1:9650/ext/info `
+}' -H 'content-type:application/json;' 127.0.0.1:9650/ext/info
+```
 
 The response is:
-![img7](https://github.com/wuzhong-zhu/Avalanche_subnet_tutorial/blob/main/resources/tutorial%202/img7.png?raw=true)
+![img7](https://github.com/wuzhong-zhu/Avalanche_subnet_tutorial/blob/main/resources/tutorial%202/img6.7.png?raw=true)
 
 Now visit Avalanche’s official [wallet](https://wallet.avax.network/) website and create a new wallet for your validator. Remember to change the network to Fuji.
+![img7](https://github.com/wuzhong-zhu/Avalanche_subnet_tutorial/blob/main/resources/tutorial%202/img7.png?raw=true)
+
+Since it is a new wallet, it is empty. The validator node needs some AVAX to start validating transactions. To get testnet AVAX, copy its X-chain address.
 
 ![img8](https://github.com/wuzhong-zhu/Avalanche_subnet_tutorial/blob/main/resources/tutorial%202/img8.png?raw=true)
 
 
-Since it is a new wallet, it is empty. The validator node needs some AVAX to start validating transactions. To get testnet AVAX, copy its X-chain address.
+Go to the [official faucet page](https://faucet.avax-test.network/) to request for testnet faucet. You should receive 2 AVAX on the X-chain.
+
 ![img9](https://github.com/wuzhong-zhu/Avalanche_subnet_tutorial/blob/main/resources/tutorial%202/img9.png?raw=true)
 
-Go to the [official faucet page](https://faucet.avax-test.network/) to request for testnet faucet. You should receive 2 AVAX on the X-chain.
+Go to the cross-chain tab, and transfer 1 AVAX to P-chain.
 ![img10](https://github.com/wuzhong-zhu/Avalanche_subnet_tutorial/blob/main/resources/tutorial%202/img10.png?raw=true)
 
-Go to the cross-chain tab, and transfer 1 AVAX to P-chain.
+
+Go to the Earn tab and click Add validator.
 
 ![img11](https://github.com/wuzhong-zhu/Avalanche_subnet_tutorial/blob/main/resources/tutorial%202/img11.png?raw=true)
-Go to the Earn tab and click Add validator.
-![img12](https://github.com/wuzhong-zhu/Avalanche_subnet_tutorial/blob/main/resources/tutorial%202/img12.png?raw=true)
+
 
 Fill in the node ID and AVAX and click on Confirm.
-![img13](https://github.com/wuzhong-zhu/Avalanche_subnet_tutorial/blob/main/resources/tutorial%202/img13.png?raw=true)
+
+![img12](https://github.com/wuzhong-zhu/Avalanche_subnet_tutorial/blob/main/resources/tutorial%202/img12.png?raw=true)
 
 Congratulations, you have a validator node now!
-
-
 
 ---
 
