@@ -45,6 +45,7 @@ Fill in the following information:
 
 - **Chain ID**: 13213
 - **Currency Symbol**: *any symbol is ok
+
 Now MetaMask should successfully link to the blockchain. It now can be used to access the initial address. The initial address is defined during creation of genesis block.
 
 Its public address is **0x8db97C7cEcE249c2b98bDC0226Cc4C2A57BF52FC**.
