@@ -1,4 +1,4 @@
-# Avalanche subnet tutorial series: Running a local Avalanche node on Fuji testnet
+# Avalanche subnet tutorial series(3): Running a local Avalanche node on Fuji testnet
 
 ![img0](https://github.com/wuzhong-zhu/Avalanche_subnet_tutorial/blob/main/resources/tutorial%203/img0.jpeg?raw=true)
 
