@@ -236,11 +236,11 @@ By now, the developer should have a *subnetID, username*, and *password* from th
 
 The only thing that is missing is the *vmID* and the *genesisData*.
 
-```
-Download the source code for EVM:
-```
 
-clone git@github.com:ava-labs/subnet-evm.git
+Download the source code for EVM:
+
+`clone git@github.com:ava-labs/subnet-evm.git`
+
 Build the source code by running:
 ```
 cd subnet-evm
