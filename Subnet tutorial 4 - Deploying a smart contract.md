@@ -80,18 +80,6 @@ Once the transaction is finalised, it is shown in the **Activity** section. The 
 ![img](https://github.com/wuzhong-zhu/Avalanche_subnet_tutorial/blob/main/resources/tutorial%204/img9.png?raw=true)
 
 ---
-
-## Setting up Git
-
-Git is another must-have tool for developers. Run the following command to check if it is already installed.
-
-`git version`
-
-If not, [install it](https://github.com/git-guides/install-git).
-
-
-
----
 ## Sending smart contract with Remix
 
 Next step is deploying a smart contract on the blockchain. [Remix](https://remix.ethereum.org/) is used to do that.
