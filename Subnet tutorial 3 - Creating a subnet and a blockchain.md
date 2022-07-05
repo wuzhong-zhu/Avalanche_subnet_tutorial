@@ -206,17 +206,6 @@ After it is done, a new subnet is up and running but wait, we still have to crea
 
 ## Creating a blockchain
 
-Git is another must-have tool for developers. Run the following command to check if it is already installed.
-
-`git version`
-
-If not, [install it](https://github.com/git-guides/install-git).
-
-
-
----
-## Setting up node 
-
 The next step is to create a blockchain. Avalanche supports 3 types of blockchains—AVM, EVM, and custom VM.
 
 The [Avalanche virtual machine (AVM)](https://docs.avax.network/build/tutorials/platform/subnets/create-avm-blockchain) blockchain is identical to X-chain.
